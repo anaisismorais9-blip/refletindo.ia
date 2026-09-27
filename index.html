@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA na Escola: Reflexões Práticas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Unidade de Técnicas Computacionais</h1>
+        <p>Experimente e reflita sobre o funcionamento e a ética da Inteligência Artificial</p>
+    </header>
+
+    <main class="container">
+        
+        <!-- ATIVIDADE 1 -->
+        <section class="card">
+            <h2>1. Regras Tradicionais vs. IA</h2>
+            <p class="descricao">A programação tradicional exige que o humano crie todas as regras. O que acontece se digitarmos algo fora do esperado?</p>
+            <div class="input-group">
+                <input type="text" id="filmeInput" placeholder="Digite um gênero (Ex: Ação, Terror)">
+                <button onclick="classificarFilme()">Recomendar Filme</button>
+            </div>
+            <div id="resultadoFilme" class="resultado"></div>
+        </section>
+
+        <!-- ATIVIDADE 2 -->
+        <section class="card">
+            <h2>2. Detector de Bullying (Moderação)</h2>
+            <p class="descricao">Simulador de moderação de texto. Teste frases como "Esse desenho ficou feio" e debata o contexto com a turma.</p>
+            <div class="input-group">
+                <input type="text" id="textoInput" placeholder="Digite um comentário para a IA analisar">
+                <button onclick="moderarTexto()">Analisar Comentário</button>
+            </div>
+            <div id="resultadoTexto" class="resultado"></div>
+        </section>
+
+        <!-- ATIVIDADE 3 -->
+        <section class="card">
+            <h2>3. Simulador de Crédito (Viés Algorítmico)</h2>
+            <p class="descricao">Descubra como preconceitos humanos históricos podem ser automatizados e camuflados dentro de um algoritmo.</p>
+            <div class="form-group">
+                <label>Histórico de Compras:</label>
+                <select id="historicoInput">
+                    <option value="bom">Bom Pagador</option>
+                    <option value="ruim">Inadimplente</option>
+                </select>
+
+                <label>Bairro de Residência:</label>
+                <select id="bairroInput">
+                    <option value="centro">Bairro Central / Nobre</option>
+                    <option value="periferia">Bairro Periférico</option>
+                </select>
+
+                <button onclick="analisarCredito()">Simular Análise de Crédito</button>
+            </div>
+            <div id="resultadoCredito" class="resultado"></div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
